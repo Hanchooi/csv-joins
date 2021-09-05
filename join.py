@@ -71,8 +71,8 @@ def main():
     #-------------------------------------------------------------------------------------------
     # Load the left data file
     #-------------------------------------------------------------------------------------------
-    leftFn = args.leftFn
-    leftPK = args.leftPK
+    leftFn = args.leftFn #Left File Name
+    leftPK = args.leftPK #Left Primary Key
 
     leftHeader, leftData, leftKeyIndex = metaLoadCSVFile(leftFn, leftPK)
 
@@ -84,8 +84,8 @@ def main():
     #-------------------------------------------------------------------------------------------
     # Load the right data file
     #-------------------------------------------------------------------------------------------
-    rightFn = args.rightFn
-    rightPK = args.rightPK
+    rightFn = args.rightFn #Right File Name
+    rightPK = args.rightPK #Right Primary Key
 
     rightHeader, rightData, rightKeyIndex = metaLoadCSVFile(rightFn, rightPK)
 
@@ -172,8 +172,8 @@ def main():
 
     f.close()
 
-    print "Finished in %0.4f seconds" % (time.time() - startTime)
+    print ("Finished in %0.4f seconds" % (time.time() - startTime))
 
 
-if __name__ == "__main__":
-    main()
+#if __name__ == "__main__":
+#   main()
